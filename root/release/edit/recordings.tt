@@ -160,9 +160,9 @@
               <td class="select">
                 <input type="radio" class="newrecording recordingmatch"
                   [%- IF addnew_is_default %] checked="checked"[%- END -%]
-                  [%- IF name %] name="[% name %]"[%- END -%] />
+                  [%- IF name %] name="[% name %]" id="[% name %]-addnew"[%- END -%] />
               </td>
-              <td class="recording" colspan="3">[% l('Add a new recording') %]</td>
+              <td class="recording" colspan="3"><label for="[% name %]-addnew">[% l('Add a new recording') %]</label></td>
             </tr>
 
           </tbody>
